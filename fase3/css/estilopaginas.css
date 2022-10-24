@@ -5,53 +5,19 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0; 
-    background-color:  rgb(248, 255, 251); 
+    background-color:  rgb(194, 207, 200); 
 }
 header{     
     padding: 10px;
-    background-color: steelblue;
+    background-color: rgb(63, 102, 66);
     text-align: center;
     text-decoration: #000;
     border:1px solid #000;   
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-nav a{
-      text-decoration:none;
-      color:inherit;
-      font-size:14px;
-      }
             
-nav li{
-      display:inline-block;
-      width:150px;
-      height:30px;
-      padding:5px 10px;
-      background-color:rgb(136, 195, 230);
-      border:1px solid #000;
-      text-align:center;
-      color:rgb(0, 0, 0);
-      text-decoration: #fff;
-      position:relative;
-}
-            
-nav li:hover{
-      background-color:#fff;
-      color:#000;
-      }
-            
-nav li>ul{
-      display:none;
-      }
-
-nav li:hover>ul{
-      display:block;
-      position:absolute;
-      top:30px;
-      left:0px;
-}
 section{
-      background-color: rgb(201, 252, 227);
+      background-color: rgb(110, 165, 139);
       padding: 30px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -59,16 +25,16 @@ section{
       text-align:justify;
 }
 aside{
-      background-color:  rgb(175, 226, 226);
+      background-color:  rgb(110, 165, 139);
       padding: 30px;
       grid-column: 5/3;
       border:1px solid #000;
       text-align: center;
       margin: 10px;
       
-}
+    }
 article{
-    background-color: rgb(175, 226, 226);
+    background-color:rgb(110, 165, 139);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 10px; 
     padding: 70px;
@@ -77,7 +43,7 @@ article{
     text-align:initial;
 }
 footer{
-      background-color: steelblue;
+      background-color: rgb(198, 250, 243);
       border:1px solid #000;
       text-align: center;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
