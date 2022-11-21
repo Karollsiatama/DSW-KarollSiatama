@@ -4,11 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <script language="JavaScript">
 <!--
-alert("Bienvenido a la Autoevaluación correspondiente al primer mes \n\nSeleccione las respuestas que crea correctas, teniendo en "+
-      "\ncuenta las siguientes consideraciones \n\n1. Los aciertos tienen el valor de un punto"+
-	  " \n\n2. Las respuestas no contestadas ni suman ni restan puntos.") 
+alert("Bienvenido a la evaluacion de diseno de sitiso web, en esta pagina va a evaluar los conocimientos de las diferentes fases aplicadas 14-04 2022") 
 //-->
- 
+<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+  </div>
+</div>
 var resp = new Array;
 var faite = new Array;
 var score = 0;
@@ -17,13 +23,7 @@ resp[1] = "a";
 resp[2] = "b";
 resp[3] = "c";
 resp[4] = "b";
-resp[5] = "c";
-resp[6] = "c";
-resp[7] = "b";
-resp[8] = "c";
-resp[9] = "b";
-resp[10] = "a";
- 
+
 function Engine(question, repose)
 {
    if (repose != resp[question])
@@ -44,23 +44,17 @@ function Engine(question, repose)
  
 function Nivel () {
  
-        if (score >= 9 && score < 10) {
-                alert(score + "/10 " + "Muy bien, prueba a superarlo");
+        if (score >= 3 && score < 10) {
+                alert(score + "/4 " + "Excelente sigue asi");
                 }
-        if (score >= 7 && score < 8) {
-                alert(score + "/10 " + "Bien, pero puedes hacerlo mejor");
+        if (score >= 2 && score < 8) {
+                alert(score + "/4 " + " Seguro puedes mejorar");
                 }
-        if (score >= 5 && score < 6) {
-                alert(score + "/10 " + "Aprobado por los pelos. No te fíes");
+        if (score >= 1 && score < 6) {
+                alert(score + "/4 " + "No apruebas pero sigue adelante, intentalo de nuevo");
                 }
-        if (score >= 3 && score < 4) {
-                alert(score + "/10 " + "Insuficiente. Has de estudiar más");
-                }
-        if (score < 2) {
-                alert("Su puntuación es: "+ score
-				+"\nLa puntuación máxima que podía obtener es 10"
-				+"\nTiene que reviazar nuevamente sus lecciones"
-				+"\nSu porcentaje de aciertos es menos del 10%");
+        if (score >= 0 && score < 4) {
+                alert(score + "/4 " + "Todo bien. hazlo de nuevo");
                 }
 }
  
@@ -70,14 +64,14 @@ function Nivel () {
 <body>
 <table>
   <tr>
-    <td width="50" rowspan="2"><img src="../../imagen/desafio.gif" width="50" height="50"></td>
-    <td width="515" class="TopicTitle"></td>
+    <td width="50" rowspan="2"><img src="../../fase 4/paginas/evaluacion.webp" width="100" height="100"></td>
+    <td width="515" class="Evaluacion"></td>
   </tr>
   <tr>
   </tr>
   <tr>
     <td> </td>
-    <td class="TopicSubtitle"></td>
+    <td class="Diseño"></td>
   </tr>
   <tr>
     <td height="521"> </td>
@@ -86,58 +80,60 @@ function Nivel () {
 <div >
 <FORM NAME="formulario" ACTION="">
             <p>1.
-              ¿Los circuitos de una computadora se construyen mediante ?</p>
+              recuerda que etiqueta de HTML es usada para realizar parrafos</p>
             <p>
               <input name=1 onClick="Engine(1, this.value)" type=radio value=a>
-              a. La lógica combinatoria y secuencial.</p>
+              a. la etiqueta "p".</p>
             <p> 
               <input name=1 onClick="Engine(1, this.value)" type=radio value=b>
-              b. La lógica relacional.</p>
+              b. La etiqueta "H1".</p>
             <p> 
               <input name=1 onClick="Engine(1, this.value)" type=radio value=c>
-              c. La lógica conceptual.</p>
+              c. La etiqueta "nav".</p>
+
             <p>
-              2. ¿La lógica de la computadora se basa en las reglas de?</p>
+              2. Para que una etiqueta funcione correctamente se de debe. _______-</p>
             <p> 
               <input name=2 onClick="Engine(2, this.value)" type=radio value=a>
-              a. La lógica Booleana.</p>
+              a. mover espacios para que quede en el lugar correcto.</p>
             <p> 
               <input name=2 onClick="Engine(2, this.value)" type=radio value=b>
-              b. El álgebra Booleana.</p>
+              b. Abrir y cerrar .</p>
             <p> 
               <input name=2 onClick="Engine(2, this.value)" type=radio value=c>
-              c. Las tablas de verdad.</p>
+              c. No hacer nada.</p>
             <p> </p>
             <p>3.
-              ¿La salida y el estado de un circuito de lógica secuencial
-              depende del estado anterior y de?</p>
+              Con que signo se separan los atributos</p>
             <p> 
               <input name=3 onClick="Engine(3, this.value)" type=radio value=a>
-              a. De los conjuntos actuales de combinaciones.</p>
+              a. /</p>
             <p> 
               <input name=3 onClick="Engine(3, this.value)" type=radio value=b>
-              b. De los conjuntos actuales de secuencias.</p>
+              b. ... </p>
             <p> 
               <input name=3 onClick="Engine(3, this.value)" type=radio value=c>
-              c. De los conjuntos actuales de entradas.</p>
+              c. = </p>
             <p> </p>
             <p>4.
-              ¿El funcionamiento de la computadora puede simularse por medio de?</p>
+              Que recursos se utilizaron para dar a entender los temas de etiquetas y atributos</p>
             <p> 
               <input name=4 onClick="Engine(4, this.value)" type=radio value=a>
-              a. Un modelo estructurado.</p>
+              a. imagenes.</p>
             <p> 
               <input name=4 onClick="Engine(4, this.value)" type=radio value=b>
-              b. Un modelo simple.</p>
+              b. nada.</p>
             <p>
+            <p> 
+              <input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+              c. audios y videos.</p>
+            <p>
+
               <input name=Resulta onClick=Nivel() type=button value=Resultados>
               <input type="button" name="repose" value="Respuestas Correctas"
 	             onClick="alert('reposes Correctas \n\n 1A  6A  11B\n\n 2B  7B  12A\n\n 3B  8A  13B\n\n 4C  9A  14C\n\n 5B 10C  15C')">
               <input type="reset" value="Borrar resultados" name="reset">
             </p>
-            <p> Para
-              tomar nuevamente la autoevaluación presione el botón
-              'F5' </p>
             </FORM>
   </div>
       </div>
