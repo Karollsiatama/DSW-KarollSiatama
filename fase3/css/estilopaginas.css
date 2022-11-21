@@ -52,6 +52,7 @@ nav a{
     text-decoration:none;
     color:inherit;
     font-size:14px;
+    border:1px solid #000;
     }
           
 nav li{
@@ -74,6 +75,7 @@ nav li:hover{
           
 nav li>ul{
     display:none;
+    border:1px solid #000;
     }
 
 nav li:hover>ul{
@@ -81,4 +83,5 @@ nav li:hover>ul{
     position:absolute;
     top:30px;
     left:0px;
+    border:1px solid #000;
 }
