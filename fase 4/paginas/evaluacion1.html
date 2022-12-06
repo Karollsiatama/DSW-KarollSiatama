@@ -6,15 +6,7 @@
 <!--
 alert("Bienvenido a la evaluacion de diseno de sitiso web, en esta pagina va a evaluar los conocimientos de las diferentes fases aplicadas 14-04 2022") 
 //-->
-<div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
-  </div>
-</div>
+
 var resp = new Array;
 var faite = new Array;
 var score = 0;
@@ -62,85 +54,90 @@ function Nivel () {
 </head>
  
 <body>
-<table>
-  <tr>
-    <td width="50" rowspan="2"><img src="../../fase 4/paginas/evaluacion.webp" width="100" height="100"></td>
-    <td width="515" class="Evaluacion"></td>
-  </tr>
-  <tr>
-  </tr>
-  <tr>
-    <td> </td>
-    <td class="Diseño"></td>
-  </tr>
-  <tr>
-    <td height="521"> </td>
-    <td height="521">
-      <div>
-<div >
-<FORM NAME="formulario" ACTION="">
-            <p>1.
-              recuerda que etiqueta de HTML es usada para realizar parrafos</p>
-            <p>
-              <input name=1 onClick="Engine(1, this.value)" type=radio value=a>
-              a. la etiqueta "p".</p>
-            <p> 
-              <input name=1 onClick="Engine(1, this.value)" type=radio value=b>
-              b. La etiqueta "H1".</p>
-            <p> 
-              <input name=1 onClick="Engine(1, this.value)" type=radio value=c>
-              c. La etiqueta "nav".</p>
-
-            <p>
-              2. Para que una etiqueta funcione correctamente se de debe. _______-</p>
-            <p> 
-              <input name=2 onClick="Engine(2, this.value)" type=radio value=a>
-              a. mover espacios para que quede en el lugar correcto.</p>
-            <p> 
-              <input name=2 onClick="Engine(2, this.value)" type=radio value=b>
-              b. Abrir y cerrar .</p>
-            <p> 
-              <input name=2 onClick="Engine(2, this.value)" type=radio value=c>
-              c. No hacer nada.</p>
-            <p> </p>
-            <p>3.
-              Con que signo se separan los atributos</p>
-            <p> 
-              <input name=3 onClick="Engine(3, this.value)" type=radio value=a>
-              a. /</p>
-            <p> 
-              <input name=3 onClick="Engine(3, this.value)" type=radio value=b>
-              b. ... </p>
-            <p> 
-              <input name=3 onClick="Engine(3, this.value)" type=radio value=c>
-              c. = </p>
-            <p> </p>
-            <p>4.
-              Que recursos se utilizaron para dar a entender los temas de etiquetas y atributos</p>
-            <p> 
-              <input name=4 onClick="Engine(4, this.value)" type=radio value=a>
-              a. imagenes.</p>
-            <p> 
-              <input name=4 onClick="Engine(4, this.value)" type=radio value=b>
-              b. nada.</p>
-            <p>
-            <p> 
-              <input name=4 onClick="Engine(4, this.value)" type=radio value=b>
-              c. audios y videos.</p>
-            <p>
-
-              <input name=Resulta onClick=Nivel() type=button value=Resultados>
-              <input type="button" name="repose" value="Respuestas Correctas"
-	             onClick="alert('reposes Correctas \n\n 1A  6A  11B\n\n 2B  7B  12A\n\n 3B  8A  13B\n\n 4C  9A  14C\n\n 5B 10C  15C')">
-              <input type="reset" value="Borrar resultados" name="reset">
-            </p>
-            </FORM>
+  <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasLabel">evaluacion</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <table>
+        <tr>
+        </tr>
+        <tr>
+          <td> </td>
+          <td class="Diseño"></td>
+        </tr>
+        <tr>
+          <td height="521"> </td>
+          <td height="521">
+            <div>
+      <div >
+      <FORM NAME="formulario" ACTION="">
+                  <p>1.                    1.
+                    recuerda que etiqueta de HTML es usada para realizar parrafos</p>
+                  <p>
+                    <input name=1 onClick="Engine(1, this.value)" type=radio value=a>
+                    a. la etiqueta "p".</p>
+                  <p> 
+                    <input name=1 onClick="Engine(1, this.value)" type=radio value=b>
+                    b. La etiqueta "H1".</p>
+                  <p> 
+                    <input name=1 onClick="Engine(1, this.value)" type=radio value=c>
+                    c. La etiqueta "nav".</p>
+      
+                  <p>
+                    2. Para que una etiqueta funcione correctamente se de debe. _______-</p>
+                  <p> 
+                    <input name=2 onClick="Engine(2, this.value)" type=radio value=a>
+                    a. mover espacios para que quede en el lugar correcto.</p>
+                  <p> 
+                    <input name=2 onClick="Engine(2, this.value)" type=radio value=b>
+                    b. Abrir y cerrar .</p>
+                  <p> 
+                    <input name=2 onClick="Engine(2, this.value)" type=radio value=c>
+                    c. No hacer nada.</p>
+                  <p> </p>
+                  <p>3.
+                    Con que signo se separan los atributos</p>
+                  <p> 
+                    <input name=3 onClick="Engine(3, this.value)" type=radio value=a>
+                    a. /</p>
+                  <p> 
+                    <input name=3 onClick="Engine(3, this.value)" type=radio value=b>
+                    b. ... </p>
+                  <p> 
+                    <input name=3 onClick="Engine(3, this.value)" type=radio value=c>
+                    c. = </p>
+                  <p> </p>
+                  <p>4.
+                    Que recursos se utilizaron para dar a entender los temas de etiquetas y atributos</p>
+                  <p> 
+                    <input name=4 onClick="Engine(4, this.value)" type=radio value=a>
+                    a. imagenes.</p>
+                  <p> 
+                    <input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+                    b. nada.</p>
+                  <p>
+                  <p> 
+                    <input name=4 onClick="Engine(4, this.value)" type=radio value=b>
+                    c. audios y videos.</p>
+                  <p>
+      
+                    <input name=Resulta onClick=Nivel() type=button value=Resultados>
+                    <input type="button" name="repose" value="Respuestas Correctas"
+                     onClick="alert('reposes Correctas \n\n 1A  6A  11B\n\n 2B  7B  12A\n\n 3B  8A  13B\n\n 4C  9A  14C\n\n 5B 10C  15C')">
+                    <input type="reset" value="Borrar resultados" name="reset">
+                  </p>
+                  </FORM>
+        </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
-      </div>
-    </td>
-  </tr>
-</table>
 <p> </p>
- 
+<img src="../paginas/evaluacion.webp" class="rounded mx-auto d-block" alt="...">
+
 </body>
 </html>
