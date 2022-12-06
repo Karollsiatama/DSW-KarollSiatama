@@ -2,9 +2,11 @@
 $custom-colors: (
   "custom-color": rgb(177, 72, 72)
 );
-
+$ligth-color: (
+  "ligth-color": rgb(177, 72, 72)
+);
 // Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors: map-merge($ligth-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
